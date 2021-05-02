@@ -35,4 +35,4 @@ app.get('/buy', (req, res) => {
   res.send('done')
 })
 
-app.listen(3000)
+app.listen(process.env.PORT)
