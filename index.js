@@ -9,16 +9,6 @@ app.get('/', (req, res) => {
 	res.sendFile(__dirname + '/Site1/index.html');
 });
 
-
-var transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'aerosemail12@gmail.com',
-    pass: '$Onic1991'
-  }
-});
-
-
 app.get('/buy', (req, res) => {
   var mailOptions = {
     from: 'aerosemail12@gmail.com',
